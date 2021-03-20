@@ -9,6 +9,7 @@ def countword():
         if index == 0:
             word = sentence.lower().rstrip()
             index = index +1
+            counter = counter + 1
         else:
             sentence = sentence.lower()
             sentence = sentence.split()

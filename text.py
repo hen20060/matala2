@@ -1,16 +1,21 @@
 def revword(word):
-    return word[::-1].lower
+    return word[::-1]
 
 def countword():
     counter = 0
     file = open('text.txt')
-    word = file[0].lower()
+    index = 0
     for sentence in file:
-        if sentence != file[0]:
-            sentence=sentence.split()
+        if index == 0:
+            word = sentence.lower().rstrip()
+            index = index +1
+        else:
+            sentence = sentence.lower()
+            sentence = sentence.split()
             for word1 in sentence:
-                word1 = revword().lower()
+                word1 = revword(word1)
                 if word1 == word:
                     counter = counter + 1
     return counter
 print(countword())
+

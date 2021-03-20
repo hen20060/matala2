@@ -3,7 +3,7 @@ def revword(word):
 
 def countword():
     counter = 0
-    file = open('text.txt')
+    file = open(r'text.txt')
     index = 0
     for sentence in file:
         if index == 0:

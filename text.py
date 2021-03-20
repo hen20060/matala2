@@ -18,5 +18,5 @@ def countword():
                 if word1 == word:
                     counter = counter + 1
     return counter
-print(countword())
+countword()
 
